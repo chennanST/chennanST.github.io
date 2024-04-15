@@ -2201,6 +2201,139 @@ pre .deletion {
   --highlight-addition: #144212;
   --highlight-deletion: #600;
 }
+p,
+input,
+pre>span,
+textarea {
+  cursor: url(redefine_config() 'custom_css.cursor.text'), text;
+}
+.fancybox-container .fancybox-stage,
+.fancybox__carousel .is-draggable {
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-out'), zoom-out;
+}
+.fancybox a,
+.fancybox-can-zoomIn .fancybox-content,
+.fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-in'), zoom-in;
+}
+span.btn>a:not([href]):hover,
+.fancybox-button[disabled],
+.fancybox-button[disabled]:hover,
+.gt-container .gt-btn.is--disable,
+span.not-select {
+  cursor: url(redefine_config() 'custom_css.cursor.not-allowed'), not-allowed;
+}
+html,
+a:not([href]),
+a:not([href]) p,
+button[disabled],
+html input[disabled],
+.article .widget,
+#l_body .post section.meta .new-meta-box .new-meta-item .notlink,
+#rightmenu-wrapper ul.list-v.rightmenu a,
+span.btn a:not([href]),
+div.tabs ul.nav-tabs li.tab.active a,
+kbd,
+.a > p,
+.not-select,
+.not-select p,
+.aplayer .aplayer-info .aplayer-music,
+.gt-container a.is--active,
+.iziToast,
+.iziToast p,
+.iframe,
+.embed-show,
+p > img,
+p > svg,
+.fix-cursor-default {
+  cursor: url(redefine_config() 'custom_css.cursor.default'), default;
+}
+a,
+psw,
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit],
+table::-webkit-scrollbar-thumb,
+scrollbar::-webkit-scrollbar-thumb,
+#scroll-down,
+#rightmenu-wrapper .aplayer-volume-bar,
+#rightmenu-wrapper li.music.ctrl a,
+#u-search .modal .modal-header .btn-close,
+#u-search .modal .modal-footer .nav,
+article .checkbox input,
+details summary,
+.article a.link-card,
+div.tabs ul.nav-tabs li.tab a,
+.btn-copy,
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content,
+.waves-effect,
+a.result.search-result-fix,
+.tag > p,
+.prev > p,
+.next > p,
+.author > p,
+.list-h > a > p,
+.category > a > p,
+.friend-right p,
+.v[data-class=v] a,
+.v[data-class=v] .vbtn,
+.v[data-class=v] .vicon,
+.v[data-class=v] .vcards .vcard .vhead .vnick,
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat,
+.v[data-class=v] .vwrap .vemojis i,
+.v[data-class=v] .vcards .vcard .vcontent.expand,
+.aplayer .aplayer-pic,
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon,
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap,
+.aplayer .aplayer-list ol li,
+.aplayer .aplayer-list ol li .aplayer-list-author,
+.aplayer .aplayer-list ol li .aplayer-list-index,
+.waves-button,
+.waves-button-input,
+.waves-button:hover,
+.waves-button:visited,
+.fancybox-button,
+.gt-container .gt-btn,
+.gt-container .gt-user-inner,
+.gt-container .gt-avatar-github,
+.gt-container .gt-popup .gt-action,
+.gt-container .gt-comment-like:hover,
+.gt-container .gt-comment-edit:hover,
+.gt-container .gt-comment-reply:hover,
+.tk-icon,
+.tk-avatar img,
+.tk-meta a,
+.tk-action-icon,
+.fancybox,
+.fix-cursor-pointer {
+  cursor: url(redefine_config() 'custom_css.cursor.pointer'), pointer;
+}
+.cur-default {
+  cursor: url(redefine_config() 'custom_css.cursor.default'), default !important;
+}
+.cur-pointer,
+.carousel__button,
+.fancybox__slide {
+  cursor: url(redefine_config() 'custom_css.cursor.pointer'), pointer !important;
+}
+.cur-not-allowed {
+  cursor: url(redefine_config() 'custom_css.cursor.not-allowed'), not-allowed !important;
+}
+.cur-zoom-in,
+.fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content,
+.has-image[data-image-fit=contain].can-zoom_in .fancybox__image {
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-in'), zoom-in !important;
+}
+.cur-zoom-out,
+.fancybox__carousel .is-draggable,
+.has-image[data-image-fit=contain].is-draggable .fancybox__image {
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-out'), zoom-out !important;
+}
+.cur-text {
+  cursor: url(redefine_config() 'custom_css.cursor.text'), text !important;
+}
 :root {
   --background-color: #fff;
   --background-color-transparent: rgba(255,255,255,0.6);
@@ -10524,170 +10657,4 @@ div.tabs .tab-content .tab-pane .note:last-child {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-}
-body {
-  cursor: url("/cursor/default.png"), default;
-}
-a,
-button {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-input[type="text"],
-textarea {
-  cursor: url("/cursor/text.png"), text;
-}
-:global-link {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-button,
-[role="button"],
-input[type="submit"],
-input[type="reset"] {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-input[type="button"] {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-input[type="radio"],
-input[type="checkbox"],
-select,
-option {
-  cursor: url("/cursor/default.png"), default;
-}
-iframe {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-img,
-video,
-audio {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-area {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-table {
-  cursor: url("/cursor/default.png"), default;
-}
-tr,
-th,
-td {
-  cursor: url("/cursor/default.png"), default;
-}
-abbr,
-acronym {
-  cursor: url("help-cursor"), help;
-}
-cite,
-dfn,
-em,
-i,
-var {
-  cursor: url("/cursor/default.png"), default;
-}
-strong,
-b {
-  cursor: url("/cursor/default.png"), default;
-}
-sub,
-sup {
-  cursor: url("/cursor/default.png"), default;
-}
-kbd,
-samp,
-code,
-pre {
-  cursor: url("/cursor/text.png"), text;
-}
-mark,
-ins,
-del {
-  cursor: url("/cursor/default.png"), default;
-}
-small,
-big {
-  cursor: url("/cursor/default.png"), default;
-}
-ul,
-ol,
-dir,
-menu,
-dd,
-dl {
-  cursor: url("/cursor/default.png"), default;
-}
-dt,
-li {
-  cursor: url("/cursor/default.png"), default;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  cursor: url("/cursor/default.png"), default;
-}
-p,
-blockquote,
-pre,
-address {
-  cursor: url("/cursor/default.png"), default;
-}
-form {
-  cursor: url("/cursor/default.png"), default;
-}
-fieldset {
-  cursor: url("/cursor/default.png"), default;
-}
-legend {
-  cursor: url("/cursor/default.png"), default;
-}
-button,
-input,
-textarea {
-  cursor: url("/cursor/text.png"), text;
-}
-button[disabled],
-input[disabled],
-textarea[disabled],
-button[disabled]:hover,
-input[disabled]:hover,
-textarea[disabled]:hover,
-button[disabled]:focus,
-input[disabled]:focus,
-textarea[disabled]:focus {
-  cursor: url("/cursor/not-allowed.png"), not-allowed;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-button,
-select[multiple],
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-table {
-  cursor: url("/cursor/default.png"), default;
-}
-textarea,
-select,
-input[type="file"] {
-  cursor: url("/cursor/pointer.png"), pointer;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  cursor: url("/cursor/default.png"), default;
-}
-button[disabled],
-input[disabled] {
-  cursor: url("/cursor/not-allowed.png"), not-allowed;
-}
-* {
-  cursor: url("/cursor/default.png"), default !important;
 }
