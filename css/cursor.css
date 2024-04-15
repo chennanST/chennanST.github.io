@@ -2,23 +2,23 @@ p,
 input,
 pre>span,
 textarea {
-  cursor: url(""), text;
+  cursor: url(redefine_config() 'custom_css.cursor.text'), text;
 }
 .fancybox-container .fancybox-stage,
 .fancybox__carousel .is-draggable {
-  cursor: url(""), zoom-out;
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-out'), zoom-out;
 }
 .fancybox a,
 .fancybox-can-zoomIn .fancybox-content,
 .fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
-  cursor: url(""), zoom-in;
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-in'), zoom-in;
 }
 span.btn>a:not([href]):hover,
 .fancybox-button[disabled],
 .fancybox-button[disabled]:hover,
 .gt-container .gt-btn.is--disable,
 span.not-select {
-  cursor: url(""), not-allowed;
+  cursor: url(redefine_config() 'custom_css.cursor.not-allowed'), not-allowed;
 }
 html,
 a:not([href]),
@@ -43,7 +43,7 @@ kbd,
 p > img,
 p > svg,
 .fix-cursor-default {
-  cursor: url(""), default;
+  cursor: url(redefine_config() 'custom_css.cursor.default'), default;
 }
 a,
 psw,
@@ -105,29 +105,29 @@ a.result.search-result-fix,
 .tk-action-icon,
 .fancybox,
 .fix-cursor-pointer {
-  cursor: url(""), pointer;
+  cursor: url(redefine_config() 'custom_css.cursor.pointer'), pointer;
 }
 .cur-default {
-  cursor: url(""), default !important;
+  cursor: url(redefine_config() 'custom_css.cursor.default'), default !important;
 }
 .cur-pointer,
 .carousel__button,
 .fancybox__slide {
-  cursor: url(""), pointer !important;
+  cursor: url(redefine_config() 'custom_css.cursor.pointer'), pointer !important;
 }
 .cur-not-allowed {
-  cursor: url(""), not-allowed !important;
+  cursor: url(redefine_config() 'custom_css.cursor.not-allowed'), not-allowed !important;
 }
 .cur-zoom-in,
 .fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content,
 .has-image[data-image-fit=contain].can-zoom_in .fancybox__image {
-  cursor: url(""), zoom-in !important;
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-in'), zoom-in !important;
 }
 .cur-zoom-out,
 .fancybox__carousel .is-draggable,
 .has-image[data-image-fit=contain].is-draggable .fancybox__image {
-  cursor: url(""), zoom-out !important;
+  cursor: url(redefine_config() 'custom_css.cursor.zoom-out'), zoom-out !important;
 }
 .cur-text {
-  cursor: url(""), text !important;
+  cursor: url(redefine_config() 'custom_css.cursor.text'), text !important;
 }
