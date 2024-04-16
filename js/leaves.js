@@ -1,6 +1,6 @@
 var stop, staticx;
 var img = new Image();
-img.src = "https://img.cdn.nesxc.com/2022/02/202202251325420webp";
+img.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2F616pic.com%2Ftupian%2Ffengye.html&psig=AOvVaw3ZwwCsu4F2b7oywVxdqo-F&ust=1713356393549000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJj6rLDcxoUDFQAAAAAdAAAAABAE";
 
 function Sakura(x, y, s, r, fn) {
     this.x = x;
