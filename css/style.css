@@ -7218,6 +7218,9 @@ html.is-animating .scroll-progress-bar {
   word-wrap: normal !important;
   word-break: normal;
 }
+.home-content-container .home-article-list {
+  z-index: 3;
+}
 .home-content-container .home-article-list .home-article-item {
   position: relative;
   padding: 0px;
