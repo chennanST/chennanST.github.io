@@ -67,10 +67,10 @@ function getRandom(option) {
             ret = Math.random() * window.innerWidth;
             break;
         case "y":
-            ret = 1 + Math.random() * window.innerHeight;
+            ret = Math.random() * window.innerHeight;
             break;
         case "s":
-            ret = Math.random();
+            ret = 0.5 + Math.random() * 0.5;
             break;
         case "r":
             ret = Math.random() * 4;
@@ -109,7 +109,7 @@ function startSakura() {
     document.getElementsByTagName("body")[0].appendChild(canvas);
     cxt = canvas.getContext("2d");
     var sakuraList = new SakuraList();
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 30; i++) {
         var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
         randomX = getRandom("x");
         randomY = getRandom("y");
