@@ -9948,23 +9948,37 @@ html.is-animating .scroll-progress-bar {
     transform: rotate(360deg);
   }
 }
-.fix-cursor-default {
-  cursor: url(redefine_config() 'custom_css.cursor.default'), default !important;
+#cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+/* 这里改变跟随的底色 */
+  background: var(--theme-color);
+  border-radius: 8px;
+  opacity: 0.25;
+  z-index: 10086;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  transition-property: background, opacity, transform;
 }
-.fix-cursor-pointer {
-  cursor: url(redefine_config() 'custom_css.cursor.pointer'), pointer !important;
+#cursor.hidden {
+  opacity: 0;
 }
-.fix-cursor-not-allowed {
-  cursor: url(redefine_config() 'custom_css.cursor.not-allowed'), not-allowed !important;
+#cursor.hover {
+  opacity: 0.1;
+  transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
 }
-.fix-cursor-zoom-in {
-  cursor: url(redefine_config() 'custom_css.cursor.zoom-in'), zoom-in !important;
-}
-.fix-cursor-zoom-out {
-  cursor: url(redefine_config() 'custom_css.cursor.zoom-out'), zoom-out !important;
-}
-.fix-cursor-text {
-  cursor: url(redefine_config() 'custom_css.cursor.text'), text !important;
+#cursor.active {
+  opacity: 0.5;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
 }
 .note-large {
   box-shadow: var(--redefine-box-shadow-flat);
