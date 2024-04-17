@@ -1,3 +1,3 @@
 #canvas_leaves{
-    z-index: -2; /* 设置一个较高的z-index值，确保它在其他元素上方显示 */
+    z-index: -5; /* 设置一个较高的z-index值，确保它在其他元素上方显示 */
 }
