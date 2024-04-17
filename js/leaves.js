@@ -70,7 +70,7 @@ function getRandom(option) {
             ret = Math.random() * window.innerHeight;
             break;
         case "s":
-            ret = 1 + Math.random() * 0.5;
+            ret = 0.25 + Math.random() * 0.75;
             break;
         case "r":
             ret = Math.random() * 4;
