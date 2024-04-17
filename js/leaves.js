@@ -14,7 +14,7 @@ Sakura.prototype.draw = function(cxt) {
     var xc = 20 * this.s / 2;
     cxt.translate(this.x, this.y);
     cxt.rotate(this.r);
-    cxt.globalAlpha = 0.75; // 设置透明度为 0.5，范围为 0（完全透明）到 1（完全不透明）
+    cxt.globalAlpha = 0.5; // 设置透明度为 0.5，范围为 0（完全透明）到 1（完全不透明）
     cxt.drawImage(img, 0, 0, 25 * this.s, 25 * this.s);
     cxt.restore();
 };
