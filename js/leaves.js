@@ -151,3 +151,4 @@ function stopp() {
     }
 };
 
+canvas.id = "canvas_leaves";
